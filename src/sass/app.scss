@@ -1,0 +1,18 @@
+@import "./normalized.scss";
+@import "./global.scss";
+
+/*Blocks*/
+@import "./blocks/header.scss";
+@import "./blocks/home.scss";
+@import "./blocks/about.scss";
+@import "./blocks/library.scss";
+
+@import "./blocks/projects.scss";
+
+@import "./blocks/accodion.scss";
+@import "./blocks/choise-catalog.scss";
+
+
+.button__link{
+    text-decoration: none;
+}
