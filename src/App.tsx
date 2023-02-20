@@ -6,7 +6,6 @@ import About from './pages/About';
 import Layout from './components/layout';
 import Library from './pages/Library';
 import Projects from './pages/Projects';
-import CalculatorPage from './pages/projectPages/calculator';
 
 function App() {
   return (
@@ -18,8 +17,6 @@ function App() {
           <Route path='library' element={<Library/>}/>
           <Route path='about' element={<About/>}/>    
           <Route path='library/projects' element={<Projects/>}/>
-                {/* {Projects} */}
-          <Route path='library/projects/calculator' element={<CalculatorPage/>}/>
         </Route>
       </Routes>
 
