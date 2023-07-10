@@ -1,19 +1,17 @@
 import { motion } from 'framer-motion'
-import React, { forwardRef } from 'react'
-import { Link } from 'react-router-dom'
+import { forwardRef } from 'react'
 
 type ProjectItemProps = {
     title:string
     path:string
 }
-
 type Ref = HTMLAnchorElement
 
-const ProjectItem = forwardRef<Ref,ProjectItemProps>(({title, path}, ref) => {
+const ProjectItem = forwardRef<Ref, ProjectItemProps>(({title, path}, ref) => {
   return (
-    <Link to={path} ref={ref} className='project__item'>
+    <a ref={ref} target="_blank" href={path} className='project__item' rel="noreferrer">
         <h6 className='project__item-title'>{title}</h6>
-    </Link>
+    </a>
   )
 })
 
