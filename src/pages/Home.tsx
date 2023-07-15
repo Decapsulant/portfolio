@@ -12,7 +12,7 @@ const Home = () => {
             Welcome to my portfolio
           </motion.h1>
           <motion.p custom={2} variants={elementLeftAnimation} className="home__subtitle">
-            by <span style={{ color: 'red' }}>Decapsulant</span>
+            by <span style={{ color: 'red' }}>Vyacheslav P.</span>
           </motion.p>
 
           <MButton
