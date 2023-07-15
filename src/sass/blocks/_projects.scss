@@ -5,8 +5,8 @@
   transition: all 0.2s linear;
 
   @media (max-width: 768px) {
-    width: 250px;
-    height: 150px;
+    width: 200px;
+    height: auto;
   }
 
   &:hover {
@@ -18,5 +18,11 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
   }
 }
