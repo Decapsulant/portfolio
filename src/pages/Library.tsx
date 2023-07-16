@@ -1,7 +1,11 @@
 import React from 'react';
 import { MProjectItem } from '../components/Library/Projects/ProjectItem';
 import { motion } from 'framer-motion';
-import { elementTopAnimation, elementAnimation } from '../animation/animation';
+import {
+  elementTopAnimation,
+  elementAnimation,
+  elementLeftAnimation,
+} from '../animation/animation';
 import { projectData } from '../data/projectData';
 
 const Library = () => {
@@ -15,7 +19,7 @@ const Library = () => {
           <div className="library__catalog">
             {projectData.map((el, index) => (
               <MProjectItem
-                variants={elementAnimation}
+                variants={elementLeftAnimation}
                 custom={index}
                 key={el.path}
                 icon={el.icon}
