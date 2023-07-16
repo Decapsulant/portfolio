@@ -12,8 +12,8 @@ type Ref = HTMLAnchorElement;
 const ProjectItem = forwardRef<Ref, ProjectItemProps>(({ title, path, icon }, ref) => {
   return (
     <a ref={ref} target="_blank" href={path} className="project__item" rel="noreferrer">
-      <h6 className="project__item-title">{title}</h6>
       <div className="project__item-icon">{icon({ size: 48 })}</div>
+      <p className="project__item-title">{title}</p>
     </a>
   );
 });

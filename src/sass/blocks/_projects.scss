@@ -1,5 +1,6 @@
 .project__item {
   border: 2px solid red;
+  padding: 40px 20px;
   color: #fff;
   text-decoration: none;
   transition: all 0.2s linear;
@@ -15,6 +16,7 @@
   }
 
   &-title {
+    padding: 20px 0 0 0;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -23,6 +25,5 @@
   &-icon {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
   }
 }
